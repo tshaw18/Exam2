@@ -1,0 +1,5 @@
+For some reason, every file except for white.txt was sorted. My method of sorting works for 6/7 of the files,
+but for some odd reason not the first one (white.txt). 
+
+Also, there are some random commented out parts in my Runner.h and Runner.cpp files. Ignore those. 
+I would delete them but I dont want to change the time stamp.
