@@ -1,0 +1,42 @@
+﻿Build started 6/16/2015 10:24:34 PM.
+     1>Project "c:\Users\Trevor\documents\visual studio 2013\Projects\Exam2\Exam2\Exam2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Runner.cpp Source.cpp
+         Runner.cpp
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(20): error C3867: 'Runner::get_pace': function call missing argument list; use '&Runner::get_pace' to create a pointer to member
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(20): error C2446: '<=' : no conversion from 'int' to 'int (__thiscall Runner::* )(void)'
+                 There are no conversions from integral values to pointer-to-member values
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(20): error C2296: '<=' : illegal, left operand has type 'int (__thiscall Runner::* )(void)'
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(26): error C3867: 'Runner::get_pace': function call missing argument list; use '&Runner::get_pace' to create a pointer to member
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(26): error C2446: '<=' : no conversion from 'int' to 'int (__thiscall Runner::* )(void)'
+                 There are no conversions from integral values to pointer-to-member values
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(26): error C2296: '<=' : illegal, left operand has type 'int (__thiscall Runner::* )(void)'
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(32): error C3867: 'Runner::get_pace': function call missing argument list; use '&Runner::get_pace' to create a pointer to member
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(32): error C2446: '<=' : no conversion from 'int' to 'int (__thiscall Runner::* )(void)'
+                 There are no conversions from integral values to pointer-to-member values
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(32): error C2296: '<=' : illegal, left operand has type 'int (__thiscall Runner::* )(void)'
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(38): error C3867: 'Runner::get_pace': function call missing argument list; use '&Runner::get_pace' to create a pointer to member
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(38): error C2446: '<=' : no conversion from 'int' to 'int (__thiscall Runner::* )(void)'
+                 There are no conversions from integral values to pointer-to-member values
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(38): error C2296: '<=' : illegal, left operand has type 'int (__thiscall Runner::* )(void)'
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(44): error C3867: 'Runner::get_pace': function call missing argument list; use '&Runner::get_pace' to create a pointer to member
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(44): error C2446: '<=' : no conversion from 'int' to 'int (__thiscall Runner::* )(void)'
+                 There are no conversions from integral values to pointer-to-member values
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(44): error C2296: '<=' : illegal, left operand has type 'int (__thiscall Runner::* )(void)'
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(50): error C3867: 'Runner::get_pace': function call missing argument list; use '&Runner::get_pace' to create a pointer to member
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(50): error C2446: '<=' : no conversion from 'int' to 'int (__thiscall Runner::* )(void)'
+                 There are no conversions from integral values to pointer-to-member values
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(50): error C2296: '<=' : illegal, left operand has type 'int (__thiscall Runner::* )(void)'
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(56): error C3867: 'Runner::get_pace': function call missing argument list; use '&Runner::get_pace' to create a pointer to member
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(56): error C2446: '<=' : no conversion from 'int' to 'int (__thiscall Runner::* )(void)'
+                 There are no conversions from integral values to pointer-to-member values
+     1>c:\users\trevor\documents\visual studio 2013\projects\exam2\exam2\runner.cpp(56): error C2296: '<=' : illegal, left operand has type 'int (__thiscall Runner::* )(void)'
+         Generating Code...
+         Compiling...
+         Source.cpp
+         Generating Code...
+     1>Done Building Project "c:\Users\Trevor\documents\visual studio 2013\Projects\Exam2\Exam2\Exam2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.81
