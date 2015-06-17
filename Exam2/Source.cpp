@@ -90,6 +90,25 @@ int main() {
 	} while (p < x);
 
 	cout << "Done!\n";
+	string newcolor;
+	fstream open("white.txt", ios::in);
+	
+	cout << "The fastest runner is wearing white." << endl;
+	open >> temp_first >> temp_last >> temp_pace;
+	cout << "Name: " << temp_first << " " << temp_last << endl <<
+		"Pace: " << temp_pace << endl << endl;
+	open.close();
+	temp_first = ""; temp_last = ""; temp_pace = 0;
+
+	fstream open2("red.txt", ios::in | ios::end);
+	open2.seekg(-21, ios::end);
+	open2 >> temp_first >> temp_last >> temp_pace;
+
+	cout << "The slowest runner is wearing red." << endl;
+
+	cout << "Name: " << temp_first << " " << temp_last << endl;
+	cout << "Pace: " << temp_pace << endl;
+	open.close();
 
 	return 0;
 
