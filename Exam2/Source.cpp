@@ -1,14 +1,18 @@
+// Trevor Shaw
+// Pete Tucker
+// June 16, 2015
+// CS2
+// Exam 2
+// I affirm that all code given below was written solely by me, Trevor Shaw, and that any help I received adhered to the rules stated for this exam. 
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <stack>
 #include <vector>
-#include <cstdlib>
 #include "Runner.h"
-#include "Race.h"
+#include <algorithm>
 using namespace std;
-
-
 
 
 
@@ -22,28 +26,71 @@ int main() {
 		return 0;
 	}
 
+	cout << "Working...\n\n";
+
 	string line;
 
-	vector<Runner> person;
+	vector<Runner> person(1001);
 
 	string temp_first; string temp_last; int temp_pace;
-	
-	int i = 0;
 
-	ofstream text;
+	int x = 0;
 
-	while (getline(registrants, line)){
+	string color;
+	fstream file(color + ".txt", ios::app);
 
-		registrants >> temp_first >> temp_last >> temp_pace;
-		
+	do{
+		color = "";
+
+		registrants >> temp_first >> temp_last >> temp_pace; // read objects into temp locations
+
 		// read and set characteristics of runner into vector
-		person[i].set_firstname(temp_first); person[i].set_lastname(temp_last),
-			person[i].set_pace(temp_pace);
+		person[x].set_firstname(temp_first); person[x].set_lastname(temp_last), person[x].set_pace(temp_pace);
 
-		i++;
-		text << person[i];
+		x++;
+	} while (getline(registrants, line));
+
+	cout << "Sorting racers...\n\n";
+
+	//////////////////////////////////////////////////////////// *Sorting by pace
+	for (int i = person.size() - 1; i > 0; i--){
+		int NUMOFLETTERS = 0;
+		vector<Runner> max(1); max[0] = person[0];
+
+		
+		for (int j = 1; j < i; j++){
+			if (max[0].get_pace() < person[j].get_pace()){
+				max[0] = person[j];
+				
+				
+				NUMOFLETTERS = j;
+			}
+		}
+		if (NUMOFLETTERS != i){
+			
+			person[NUMOFLETTERS] = person[i];
+			person[i] = max[0];
+		}
 	}
+	//////////////////////////////////////////////////////////// *Sorting by pace
 
+	
 
+	int p = 0; //loop
+	do{
+		color = person[p].sort_color(person[p]); // Determine color
+
+		file.open(color + ".txt", ios::app); // open file
+
+		// Write person[i] to specified file
+		file << person[p].get_firstname() << " " << person[p].get_lastname() << " " << person[p].get_pace() << endl;
+
+		p++;
+		file.close();
+	} while (p < x);
+
+	cout << "Done!\n";
+
+	return 0;
 
 }
